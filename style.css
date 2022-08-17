@@ -1,0 +1,432 @@
+/* 초기설정 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+ul,
+li {
+    list-style: none;
+    color: #000;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+html,
+body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/**************************************** PC시작 ****************************************/
+
+
+.lala {
+    width: 100vw;
+    height: 100vh;
+}
+
+.lala .lala22 {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-effect {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    animation: intro 4s;
+    animation-delay: 1.5s;
+}
+
+.effect-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-effect img {
+    transform: scale(0.5);
+}
+
+
+@keyframes intro {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    /* 50% {
+        transform: scale(50);
+        opacity: 0.5;
+    } */
+
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+
+
+.main header {
+    width: 100%;
+    min-width: 1180px;
+    height: 10%;
+    padding: 0 15%;
+    /* padding: 30px 15px; */
+    /*position: absolute;
+    z-index: 1;*/
+    /* 투명 헤더 만들때 필요 */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo-wrap {
+    /* width: 200px; */
+    height: 21.76px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url(../img/logo.png); */
+    align-items: center;
+}
+
+.logo-wrap a {
+    /* display: block;
+    width: 100%;
+    height: 100%; */
+    /* overflow: hidden; */
+    text-indent: -99999px;
+}
+
+.logo-wrap a img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+ul {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .wrapper ul li {
+    width: 33.3%;
+    line-height: 2.4;
+
+}
+
+.main .wrapper ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.main .wrapper ul li:hover {
+
+    background-color: #EDB0BE;
+    font-weight: 400;
+
+}
+
+.main-bg {
+    width: 100%;
+    height: calc(90% - 10%);
+    background-image: url(../img/pc-bg.jpg);
+    /* 검은색 투명도 주고 싶을때 linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+
+
+}
+
+
+.main .textwrapper {
+    width: 1180px;
+    margin: 14.5rem auto;
+    position: absolute;
+    left: 18.5%;
+
+    /*텍스트 가운데 정렬시*/
+
+}
+
+.main .textwrapper .textimg {
+    margin-bottom: 2rem;
+}
+
+.main .textwrapper .main-title {
+    margin-bottom: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 400;
+    font-size: 2.625rem;
+    line-height: 3.4375rem;
+    letter-spacing: -0.04rem;
+    background: linear-gradient(180deg, #8065A2 0%, #B36677 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main .textwrapper .subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 14px;
+}
+
+.main .textwrapper .sub-icon img {
+    vertical-align: middle;
+}
+
+.main .textwrapper .subtitle-wrapper .sub-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 350;
+    font-size: 1.2rem;
+    letter-spacing: -0.05em;
+}
+
+
+
+
+
+
+
+
+
+.content-wrap {
+    width: 100%;
+    height: 100vh;
+    max-width: 1180px;
+    /* background-color: bisque; */
+    margin: 120px auto 0px;
+    position: relative;
+    height: 100vh;
+}
+
+
+.content-wrap:nth-of-type(2) {
+    margin-top: 0px;
+
+}
+
+.content-wrap .benefit h3::after {
+    content: '';
+    width: 25rem;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.content-wrap .benefit h3::before {
+    content: '';
+    width: 25rem;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.content-wrap .benefit h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    font-size: 2.125rem;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.content-wrap .benefit img {
+    display: block;
+    margin: 1rem auto;
+    width: 25%;
+    margin-bottom: 4rem;
+}
+
+.content-wrap .boxwrap {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-wrap .boxwrap .box {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.15));
+    position: relative;
+    text-align: center;
+}
+
+.box p{display: none;}
+.box h6{display: none;}
+
+.box :hover {
+    display: block;
+}
+
+
+.box1 {
+    background-image: url(../img/f-1.png);
+}
+
+.box2 {
+    background-image: url(../img/f-2.png);
+}
+.box3 {
+    background-image: url(../img/f-3.png);
+}
+.box4 {
+    background-image: url(../img/f-4.png);
+}
+
+
+
+
+.content-wrap .card-wrap {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content-wrap .swiper {
+    width: 100%;
+    margin: 0 auto;
+    height: 60%;
+}
+
+.content-wrap .swiper .swiper-slide {
+    width: 100%;
+}
+
+.content-wrap .swiper .swiper-slide p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 407px;
+    margin-top: 20px;
+}
+
+.content-wrap .swiper .swiper-slide h6 {
+    width: 407px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.benefit-menu {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.benefit-menu ul {
+    margin: 0 auto;
+}
+
+.benefit-menu ul li {
+    width: 33.3%;
+    line-height: 2.4;
+
+}
+
+.benefit-menu ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.benefit-menu ul li:hover {
+
+    border-bottom: solid 2px #ADB5FC;
+    font-weight: 400;
+}
+
+
+.footer {
+    width:100%;
+    height:20%; 
+    background-color: #F4F4F4;
+
+}
+
+.footer .footer-content-wrap {
+    width :60%;
+    margin: 0 auto;
+    padding : 68px 0;
+   
+    height: 120px;
+    max-width: 1180px;
+    /* background-color: bisque; */
+    margin: 130px auto 0px;
+    position: relative;
+}
+
+.footer .footer-content-wrap img {
+    float:left;
+    margin-right:50px;
+}
+
+.footer .footer-content-wrap p {
+    font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size:  0.9rem;
+line-height: 18px;
+color:#888888;
+letter-spacing: -0.04em;
+
+
+    
+}
